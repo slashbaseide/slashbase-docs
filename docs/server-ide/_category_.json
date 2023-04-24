@@ -1,0 +1,9 @@
+{
+  "label": "Server IDE",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Server IDE for self-hosting"
+  },
+  "collapsed": false
+}
