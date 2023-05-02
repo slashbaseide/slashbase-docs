@@ -7,12 +7,21 @@ sidebar_position: 1
 Self-hosting Slashbase on your own server is easy. You need a Linux server. Follow the following steps to install it.
 
 ## Prerequisites
-- Linux server instance in AWS/Google Cloud/Digital Ocean or any other cloud provider.
+- Linux server instance in AWS/Google Cloud/Azure/Digital Ocean or any other cloud provider.
 - Docker & Docker compose installed on server instance. If you don't have docker installed, follow the [docker installation page](https://docs.docker.com/engine/install/)
 
 ## Running Install Script
-Install Script to be updated, until then please follow manual instructions below. 
-
+1. SSH into your server instance.
+2. Run the following commands:
+```
+mkdir slashbase && cd slashbase
+curl --location --output install.sh https://raw.githubusercontent.com/slashbaseide/slashbase/main/deploy/install.sh
+chmod +x install.sh
+./install.sh
+```
+3. Enter root user email and password & wait till the setup completes.
+4. If install succeeds, Slashbase Server is running on port 3000.
+5. (Additionally) You can point the server to a URL like slashbase.yourcompany.com by using nginx/apache or any other server software and add an SSL certificate. 
 
 ## Manual Instructions 
 1. SSH into your server instance.
